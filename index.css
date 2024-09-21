@@ -1,0 +1,547 @@
+/* Estilos generales para pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Ajustar el contenedor para que ocupe el 100% del ancho en móviles */
+    .contenedor {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* Menú de navegación */
+    nav ul {
+        flex-direction: column; /* Cambiar la dirección de los elementos del menú */
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0; /* Añadir más espacio entre los enlaces en móviles */
+    }
+
+    nav a {
+        font-size: 1em; /* Reducir el tamaño de la fuente del menú */
+    }
+
+    /* Encabezado */
+    header h1 {
+        font-size: 1.8em; /* Reducir el tamaño del título */
+    }
+
+    header p {
+        font-size: 1em; /* Ajustar el tamaño del subtítulo */
+    }
+
+    /* Texto de secciones */
+    h2 {
+        font-size: 1.5em; /* Ajustar el tamaño del subtítulo de secciones */
+    }
+
+    p {
+        font-size: 1em; /* Ajustar el tamaño del texto del párrafo */
+    }
+
+    /* Imágenes del mensaje */
+    .latido {
+        width: 100%; /* Asegurarse de que la imagen ocupe el 100% del ancho del contenedor */
+        max-width: 100%;
+    }
+
+    /* Videos */
+    .video-local video {
+        width: 100%;
+        height: auto; /* Asegurarse de que los videos se adapten al ancho */
+    }
+
+    .video-item video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Secciones del poema y dedicatoria */
+    .poema, .dedicatoria {
+        padding: 15px;
+    }
+
+    /* Texto dentro de las secciones */
+    .poema p, .dedicatoria p {
+        font-size: 1.2em; /* Ajustar el tamaño del texto */
+    }
+
+    /* Pie de página */
+    footer {
+        font-size: 0.9em; /* Reducir el tamaño del texto del pie de página */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (teléfonos de 375px o menos) */
+@media (max-width: 375px) {
+    nav a {
+        font-size: 0.9em; /* Reducir un poco más el tamaño del texto del menú */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reducir aún más el tamaño del título */
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    /* Texto de secciones */
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    /* Ajustar los espacios para pantallas más pequeñas */
+    .contenedor {
+        padding: 5px;
+    }
+
+    /* Imágenes del mensaje */
+    .latido {
+        margin: 10px auto; /* Reducir los márgenes de la imagen */
+    }
+
+    /* Videos */
+    .video-local video,
+    .video-item video {
+        width: 100%; /* Mantener el 100% del ancho */
+        height: auto;
+    }
+
+    /* Poema y dedicatoria */
+    .poema p, .dedicatoria p {
+        font-size: 1em;
+    }
+
+    /* Texto en el pie de página */
+    footer p {
+        font-size: 0.8em; /* Reducir aún más el tamaño del pie de página */
+    }
+}
+nav a {
+    padding: 10px 20px; /* Añadir más espacio a los enlaces del menú */
+}
+
+/* Botones y enlaces */
+button, .volver {
+    padding: 15px 20px; /* Aumentar el área táctil de los botones */
+    font-size: 1.1em;
+}
+.video-local video, .video-item video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+body {
+    font-size: 1rem; /* Tamaño base adaptable */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/*-----------------------------------------------*/
+/* Estilos para el enlace de volver al inicio */
+.volver {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffb3b3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.volver:hover {
+    background-color: #cc0000;
+}
+
+
+/* Menú de navegación */
+nav {
+    background-color: #ffb3b3; /* Fondo rosa claro para el menú */
+    padding: 10px 0;
+    position: sticky; /* Mantener el menú fijo al hacer scroll */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+nav ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar los elementos del menú */
+}
+
+nav li {
+    margin: 0 15px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: #fff; /* Color blanco para el texto del menú */
+    font-size: 1.2em; /* Tamaño de fuente para los enlaces */
+    font-weight: bold; /* Negrita para los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+nav a:hover {
+    color: #cc0000; /* Color rojo al pasar el ratón */
+}
+/* Ocultar secciones por defecto */
+.oculto {
+    display: none;
+}
+
+/* Mostrar las secciones cuando se seleccionen del menú */
+.section-active {
+    display: block;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffb3b3;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sección del mensaje */
+.mensaje {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.mensaje h2 {
+    color: #cc0000;
+}
+
+.mensaje p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Sección de imágenes */
+.imagenes {
+    display: flex; /* Usar flexbox para alinear imágenes */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.imagenes img {
+    max-width: 45%; /* Ajusta el ancho máximo de cada imagen */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Sección del poema */
+.poema {
+    margin: 20px 0;
+    padding: 30px;
+    background: linear-gradient(to right, #ffcccc, #ffe6e6); /* Fondo con gradiente suave */
+    border: 2px solid #ff9999; /* Borde decorativo */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto flotante */
+    text-align: center;
+    position: relative; /* Para posicionar elementos decorativos */
+}
+
+/* Estilo para el título del poema */
+.poema h2 {
+    color: #cc0000;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif; /* Fuente serif para darle un toque elegante */
+}
+
+/* Estilo para el contenido del poema */
+.poema p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: #444;
+    font-style: italic; /* Fuente cursiva para un estilo romántico */
+    font-family: 'Cursive', 'Georgia', serif; /* Cambiar la fuente */
+}
+
+/* Elementos decorativos adicionales */
+.poema::before, .poema::after {
+    content: "❤";
+    font-size: 2em;
+    color: #ff6666;
+    position: absolute;
+    opacity: 0.8;
+}
+
+/* Corazón decorativo superior izquierdo */
+.poema::before {
+    top: -15px;
+    left: -15px;
+}
+
+/* Corazón decorativo inferior derecho */
+.poema::after {
+    bottom: -15px;
+    right: -15px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffb3b3;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Sección del poema */
+.poema {
+    margin: 20px 0;
+    padding: 30px;
+    background: linear-gradient(to right, #ffe6e6, #ffcccc); /* Fondo con gradiente suave */
+    border: 2px solid #ff9999; /* Borde decorativo rosa */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto flotante */
+    text-align: center;
+    position: relative; /* Para posicionar elementos decorativos */
+}
+
+/* Estilo para el título del poema */
+.poema h2 {
+    color: #cc0000; /* Color rojo para el título */
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif; /* Fuente serif para darle un toque elegante */
+    font-size: 2em; /* Tamaño de fuente más grande */
+}
+
+/* Estilo para el contenido del poema */
+.poema p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: #444; /* Color del texto */
+    font-style: italic; /* Fuente cursiva para un estilo romántico */
+    font-family: 'Cursive', 'Georgia', serif; /* Cambiar la fuente */
+    white-space: pre-wrap; /* Mantener el formato del poema */
+    text-align: center; /* Justificar el texto para mejor alineación */
+    margin: 1px; /* Centrar el párrafo */
+    max-width: 80%; /* Ancho máximo del párrafo */
+}
+
+/* Elementos decorativos adicionales */
+.poema::before, .poema::after {
+    content: "❤";
+    font-size: 2em;
+    color: #ff6666;
+    position: absolute;
+    opacity: 0.8;
+}
+
+/* Corazón decorativo superior izquierdo */
+.poema::before {
+    top: -15px;
+    left: -15px;
+}
+
+/* Corazón decorativo inferior derecho */
+.poema::after {
+    bottom: -15px;
+    right: -15px;
+}
+
+/* Sección de Dedicatoria */
+.dedicatoria {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff3f3; /* Fondo rosa claro para resaltar */
+    border: 1px solid #ff9999; /* Borde decorativo rosa */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto flotante */
+    text-align: center;
+}
+
+.dedicatoria h2 {
+    color: #cc0000; /* Color rojo para el título */
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif; /* Fuente serif para un toque elegante */
+}
+
+.dedicatoria p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444; /* Texto en color oscuro para mejor lectura */
+    font-style: italic; /* Texto en cursiva para el estilo romántico */
+}
+
+.dedicatoria strong {
+    color: #cc0000; /* Color rojo para el nombre de la canción */
+}
+
+.dedicatoria em {
+    color: #ff6666; /* Color rosa claro para citas de la canción */
+}
+
+/* Estilos para el video en la dedicatoria */
+.dedicatoria video {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Animación de latidos más suave */
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.05); /* Suavizar el agrandamiento al 105% */
+    }
+    50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación a la imagen */
+.latido {
+    display: block;
+    margin: 20px auto;
+    animation: latido 2s ease-in-out infinite; /* Latido más lento con 2 segundos de duración */
+}
+
+
+
+
+/* Usar flexbox para organizar los videos y descripciones en filas */
+.video-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px; /* Espacio entre cada video */
+}
+
+.video-item video {
+    width: 300px; /* Tamaño de los videos */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb3b3; /* Fondo rosa claro */
+    color: #fff; /* Texto blanco */
+    margin-top: 20px;
+    border-top: 3px solid #cc0000; /* Borde superior rojo */
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    position: relative; /* Posicionamiento para los elementos decorativos */
+}
+
+footer p {
+    margin: 0; /* Eliminar margen */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    font-style: italic; /* Texto en cursiva para un estilo más suave */
+}
+
+/* Elementos decorativos adicionales */
+footer::before {
+    content: "❤️";
+    font-size: 2em;
+    position: absolute;
+    top: -10px; /* Ajustar la posición */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%);
+    opacity: 0.7; /* Opacidad para suavizar */
+}
+.contenedor {
+    max-width: 800px; /* Ancho máximo para mantener la legibilidad */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para contraste */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#mensaje {
+    background-color: #ffcccc; /* Fondo rosa suave */
+    padding: 20px; /* Espaciado interno */
+    border-left: 5px solid #cc0000; /* Borde izquierdo rojo */
+    margin: 20px 0; /* Margen vertical */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    color: #333; /* Color de texto oscuro para buena legibilidad */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#mensaje h2 {
+    font-size: 1.8em; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+#mensaje p {
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+.contenedor {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva y elegante */
+    font-size: 18px; /* Tamaño de fuente adecuado */
+    color: #5D3F8C; /* Color suave y romántico */
+}
+
+#mensaje {
+    font-family: 'Playfair Display', serif; /* Fuente clásica y romántica */
+    font-size: 20px; /* Tamaño un poco más grande */
+    font-weight: 400; /* Peso normal */
+    color: #333; /* Color de texto oscuro para contraste */
+}
+
+#mensaje h2 {
+    font-size: 2.5em; /* Título grande para impacto */
+    font-weight: bold; /* Título en negrita */
+    color: #E57373; /* Color suave para el título */
+    text-align: center; /* Centrar el título */
+}
+
+#mensaje p {
+    line-height: 1.8; /* Altura de línea mejorada para mayor legibilidad */
+    margin: 15px 0; /* Espacio entre párrafos */
+    text-align: justify; /* Justificar el texto para un aspecto más pulido */
+}
